@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 224px;
+    /* height: 500px; */
+
+    padding: 15px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.title {
+    font-family: 'Ubuntu', sans-serif;
+    /* font-weight: 600; */
+    font-size: 17px;
+    opacity: .9;
+}
+
+.desc {
+    opacity: .5 !important;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px !important;
+}
+
+.button:hover svg {
+    margin-left: 15px;
+  }
+  
+.button.loading:hover svg {
+    margin-left: 10px;
+}
+
+.button svg {
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+    transition: .1s;
+    display: none;
+}
+
+.button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    min-width: 45px;
+    max-width: 45px !important;
+    position: relative;
+
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+
+    height: 13px;
+}
+
+.button.loading {
+    background: #999;
+}
+
+.button.disabled {
+    cursor: no-drop;
+}
+
+#result {
+    width: 190px;
+    height: 190px;
+    position: relative;
+    background: #C4C4C4;
+    margin: 22px auto;
+    border-radius: 14px;
+}
+
+#result img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 12%), 0 4px 4px rgb(0 0 0 / 12%), 0 8px 12px rgb(0 0 0 / 12%);
+
+    border-radius: 5px;
+}
+
+#download_qr.active {
+    background: #23d5ab !important;
+}
