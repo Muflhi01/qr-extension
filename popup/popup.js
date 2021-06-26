@@ -1,6 +1,12 @@
 var result = document.getElementById("result");
 var qrcode = new QRCode("result");
 
+window.onload = () => {
+    AOS.init({
+        duration: 700,
+    });
+}
+
 chrome.runtime.sendMessage({ 
     message: "get_href" 
 }, response => {
@@ -16,14 +22,14 @@ chrome.runtime.sendMessage({
 });
 
 document.getElementById("download_qr").addEventListener("click", function() {
-    
+
     document.getElementById("download_qr").classList.add("active")
 
     setTimeout(function() {
-        chrome.runtime.sendMessage({ 
-            message: "download_qr",
-            url: document.getElementById("qr_canvas").toDataURL()
-        });
+        // chrome.runtime.sendMessage({
+        //     message: "download_qr",
+        //     url: document.getElementById("qr_canvas").toDataURL()
+        // });
 
         document.getElementById("download_qr").classList.remove("active")
 
