@@ -1,2 +1,2 @@
 *.js linguist-generated=true
-*.html linguist-language=JavaScript
+*.html linguist-language=js
