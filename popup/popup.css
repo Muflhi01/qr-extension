@@ -10,6 +10,7 @@ body {
     padding: 15px;
     position: relative;
     border-radius: 15px;
+    overflow-x: hidden;
 }
 
 .title {
