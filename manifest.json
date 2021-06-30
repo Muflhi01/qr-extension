@@ -1,7 +1,7 @@
 {
     "name": "Slurp - QR Generator",
     "description": "Create quick and easy QR codes",
-    "version": "1.1",
+    "version": "1.2",
     "manifest_version": 2,
     "icons": {
         "16": "./images/icon-16x16.png",
