@@ -1,2 +1,2 @@
 # qr-extension
-QR extension for Slurp
+QR extension for Wonoly
